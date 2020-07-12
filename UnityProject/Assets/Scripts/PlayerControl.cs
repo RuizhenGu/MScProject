@@ -7,10 +7,12 @@ public class PlayerControl : MonoBehaviour
     Rigidbody2D rigid;
     Vector2 move;
     public float velocity;
+    //Vector3 nextDoor;
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        //nextDoor = GameObject.Find("endDoor").GetComponent<DoorTrigger>().nextDoor;
     }
 
     // Update is called once per frame
@@ -18,14 +20,15 @@ public class PlayerControl : MonoBehaviour
     {
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
-        if (move.x != 0)
-        {
-            transform.localScale = new Vector3(move.x, 1, 1);
-        }
+
     }
 
     private void FixedUpdate()
     {
         rigid.MovePosition(rigid.position + move * velocity * Time.fixedDeltaTime);
+        //if (move.x != 0)
+        //{
+        //    transform.Rotate(0f, 180f, 0f);
+        //}
     }
 }

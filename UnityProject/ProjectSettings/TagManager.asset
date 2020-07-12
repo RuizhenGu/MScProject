@@ -6,6 +6,8 @@ TagManager:
   tags:
   - 3X3
   - 5X5
+  - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - 
   - 
   - Floor
-  - 
+  - Wall
   - 
   - 
   - 
