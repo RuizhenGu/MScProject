@@ -72,7 +72,6 @@
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\EnemyMain.cs" />
-    <Compile Include="Assets\Scripts\Grid.cs" />
     <Compile Include="Assets\Scripts\LevelGen.cs" />
     <Compile Include="Assets\Scripts\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />

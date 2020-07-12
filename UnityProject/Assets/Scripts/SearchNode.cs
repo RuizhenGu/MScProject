@@ -6,7 +6,6 @@ using UnityEngine;
 public enum NodeType { walkable, unwalkable };
 public class SearchNode 
 {
-    public Grid<SearchNode> grid;
     public int x;
     public int y;
 
